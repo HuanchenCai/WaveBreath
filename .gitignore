@@ -1,0 +1,41 @@
+# No data of any kind: recordings, belt signals, EGG, features, predictions, tables
+*.wav
+*.flac
+*.mp3
+*.adicht
+*.mat
+*.npy
+*.npz
+*.h5
+*.hdf5
+*.csv
+*.tsv
+*.xlsx
+*.pkl
+*.parquet
+*.log
+*.png
+*.jpg
+*.pdf
+*.html
+
+# Checkpoints: only the curated, de-identified ones under checkpoints/ are tracked
+*.pt
+*.pth
+*.ckpt
+!checkpoints/**/*.pt
+
+# Run outputs and caches
+family_runs/
+diagnostics_*/
+round_figures/
+r13_gallery/
+r16_figures/
+family_figures/
+outputs/
+__pycache__/
+*.pyc
+
+# Private participant mapping / overrides
+private_overrides.json
+*PRIVATE*
